@@ -17,8 +17,8 @@ library(tidyverse)
 ```{r starwars-plot}
 ggplot(data = starwars, 
        mapping = aes(x = height, y = mass, color = gender, size = birth_year)) +
-  geom_point(color = "#30509C") +
-  labs(size = "Birth year", x = "Height", y = "Mass")
+  geom_point(color = "#FFC0CB") +
+  labs(size = "Birth year", x = "Height (cm)", y = "Mass (kg)", title = "Mass vs. Height of Starwars Characters")
 ```
 
 ### Stretch goal: Add labels for title, x and y axes, and size of points.
